@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700|Material+Icons);
+:root {
+  --color-white: #fff;
+  --color-black: #333;
+  --color-grey: #555;
+  --color-green-sea: #16a085;
+  --color-peter-river: #1abc9c;
+}
+
+/* Globals */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+}
+a, a:hover, a:visited, a:active, a:link {
+  text-decoration: none;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#intro {
+    --color: #fff;
+    --background: #16a085;
+    --accent: #fff;
+
+    color: var(--color);
+    background: var(--background);
+}
+
+#intro p {
+    font-size: 20px;
+}
+
+#resume {
+  --color: #555;
+  --background: #fff;
+  --accent: #16a085;
+
+  color: var(--color);
+  background: var(--background);
+}
+#resume p {
+  margin-bottom: 0;
+}
+#resume .head {
+  margin-bottom: 20px;
+}
+
+#resume .body .item {
+  margin-bottom: 16px;
+}
+#resume .body p.subtitle {
+  font-size: 16px;
+}
+
+.accent-text {
+  color: var(--accent);
+}
+
+.ghost-button, .ghost-button:visited, .ghost-button:link {
+  color: var(--accent);
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+
+  margin-top: 20px;
+  padding: 8px;
+  width: 200px;
+
+  outline: none;
+  text-decoration: none;
+  border: 2px solid var(--accent);
+
+  transition: all .1s ease-in;
+}
+.ghost-button:hover, .ghost-button:active {
+  color: var(--background);
+  background: var(--accent);
+}
